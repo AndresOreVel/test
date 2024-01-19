@@ -1,0 +1,294 @@
+package com.example.miaplicacion;
+import java.util.List;
+public class Pregunta {
+    private int id;
+    private String pregunta;
+    private List<Respuesta> opciones;
+    private int resposta_correcta;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPregunta() {
+        return pregunta;
+    }
+
+    public void setPregunta(String pregunta) {
+        this.pregunta = pregunta;
+    }
+
+    public List<Respuesta> getOpciones() {
+        return opciones;
+    }
+
+    public void setOpciones(List<Respuesta> opciones) {
+        this.opciones = opciones;
+    }
+
+    public int getResposta_correcta() {
+        return resposta_correcta;
+    }
+
+    public void setResposta_correcta(int resposta_correcta) {
+        this.resposta_correcta = resposta_correcta;
+    }
+}
+
+
+package com.example.miaplicacion;
+
+public class Respuesta {
+    private int id;
+    private String imagenURL;
+    public String getImagenURL() {
+        return imagenURL;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setImagenURL(String imagenURL) {
+        this.imagenURL = imagenURL;
+    }
+    }
+
+[
+  {
+    "id": 1,
+    "pregunta": "¿Qué marca de teléfonos inteligentes utiliza el eslogan 'Shot on iPhone'?",
+    "respuesta_correcta": 3,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://images.samsung.com/is/image/samsung/assets/global/about-us/brand/logo/pc/720_600_1.png?$720_N_PNG$"
+      },
+      {
+        "id": 2,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Google_logo_%282010-2013%29.svg"
+      },
+      {
+        "id": 3,
+        "imagen": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202305180357"
+      },
+      {
+        "id": 4,
+        "imagen": "https://blog.huawei.com/wp-content/uploads/2018/08/2018e585ace58fb8logo-e7ab96e78988.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Qué marca de café utiliza la frase 'Good to the last drop'?",
+    "respuesta_correcta": 1,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxHRkxMEl0P8hNQl0QZ4erGLOfL-5P8wCmbSlo6mCaGw&s"
+      },
+      {
+        "id": 2,
+        "imagen": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/0001/5892/brand.gif?ch40A__1r2QXkNFdWGpOYpeTBIo9Hjq6&itok=ry_ArpgC"
+      },
+      {
+        "id": 3,
+        "imagen": "https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg"
+      },
+      {
+        "id": 4,
+        "imagen": "https://controlpublicidad.com/uploads/2013/09/esta.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué marca de zapatillas deportivas utiliza el lema 'Just Do It'?",
+    "respuesta_correcta": 3,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://ams3.digitaloceanspaces.com/graffica/2022/12/Adidas-Logo-1971-1024x576.jpeg"
+      },
+      {
+        "id": 2,
+        "imagen": "https://thumbs.dreamstime.com/z/logo-de-puma-s%C3%ADmbolo-blanco-dise%C3%B1o-ropa-icono-f%C3%BAtbol-abstracto-logotipo-ilustraci%C3%B3n-vectorial-con-fondo-negro-255736744.jpg?w=768"
+      },
+      {
+        "id": 3,
+        "imagen": "https://www.fayerwayer.com/resizer/7uttPkeBz_XSe4VzwUp_90fPMy0=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images-arcpublishing.com/metroworldnews/S4XYSGMG7VA3NIJW3PHSZ7PBBU.jpg"
+      },
+      {
+        "id": 4,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/53/Reebok_2019_logo.svg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué marca de automóviles es conocida por su logo de tres diamantes?",
+    "respuesta_correcta": 1,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://thumbs.dreamstime.com/z/logo-mitsubishi-motors-124401284.jpg?w=768"
+      },
+      {
+        "id": 2,
+        "imagen": "https://www.toyota-global.com/pages/contents/showroom/emblem/passion/images/passion_img01.jpg"
+      },
+      {
+        "id": 3,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/38/Honda.svg"
+      },
+      {
+        "id": 4,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Nissan_logo.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué marca de computadoras personales utiliza el eslogan 'ThinkPad'?",
+    "respuesta_correcta": 3,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://static.brusheezy.com/system/resources/previews/000/004/863/non_2x/hp-logo-photoshop-psds.jpg"
+      },
+      {
+        "id": 2,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg"
+      },
+      {
+        "id": 3,
+        "imagen": "https://1000logos.net/wp-content/uploads/2017/03/Lenovo-Logo-1.png"
+      },
+      {
+        "id": 4,
+        "imagen": "https://www.brandemia.org/wp-content/uploads/2011/04/acer1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Qué marca de refrescos utiliza el eslogan 'Taste the Feeling'?",
+    "respuesta_correcta": 4,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Pepsi_logo_2014.svg"
+      },
+      {
+        "id": 2,
+        "imagen": "https://seeklogo.com/images/S/sprite-logo-0FD1748C65-seeklogo.com.png"
+      },
+      {
+        "id": 3,
+        "imagen": "https://assets.turbologo.com/blog/es/2020/02/19132631/Dr.-pepper-can-958x575.png"
+      },
+      {
+        "id": 4,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Qué marca de ropa se conoce por su logo de un cocodrilo?",
+    "respuesta_correcta": 2,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://letslaw.es/wp-content/uploads/2021/07/Ralph-Lauren-letslaw.jpg"
+      },
+      {
+        "id": 2,
+        "imagen": "https://media.vandalsports.com/i/1706x960/9-2021/2021922181144_1.jpg.webp"
+      },
+      {
+        "id": 3,
+        "imagen": "https://yt3.googleusercontent.com/Sj9uZ21vZg_XWpI6kwi8Spd80WZtvxhokuxAWjLy-s5egU05aKmob1MUgNHbGPt6kKUVOGb9DQ=s176-c-k-c0x00ffffff-no-rj"
+      },
+      {
+        "id": 4,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e2/CK_Calvin_Klein_logo.svg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué marca de cámaras fotográficas utiliza el lema 'You can'?",
+    "respuesta_correcta": 4,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://1000logos.net/wp-content/uploads/2022/12/Panasonic-logo.png"
+      },
+      {
+        "id": 2,
+        "imagen": "https://seeklogo.com/images/N/Nikon-logo-BE7BD3C0F2-seeklogo.com.png"
+      },
+      {
+        "id": 3,
+        "imagen": "https://guiaimpresion.com/wp-content/uploads/2020/06/1973-hasta-ahora.jpg"
+      },
+      {
+        "id": 4,
+        "imagen": "https://global.canon/en/corporate/logo/img/logo_01.png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Qué marca de productos electrónicos utiliza el eslogan 'The future is yours'?",
+    "respuesta_correcta": 2,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg"
+      },
+      {
+        "id": 2,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRLtVMonc_PUFWnHKfipy6XwbPW7zBpgCfc7U5nSkJ&s"
+      },
+      {
+        "id": 3,
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/2/20/LG_symbol.svg"
+      },
+      {
+        "id": 4,
+        "imagen": "https://1000logos.net/wp-content/uploads/2017/05/Phillips-Logo-2008.png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Qué marca de chocolate utiliza la frase 'Melts in your mouth, not in your hand'?",
+    "respuesta_correcta": 4,
+    "opciones": [
+      {
+        "id": 1,
+        "imagen": "https://brandemia.org/sites/default/files/sites/default/files/logo_hershey_despues.jpg"
+      },
+      {
+        "id": 2,
+        "imagen": "https://1000logos.net/wp-content/uploads/2020/06/Snickers-Logo.png"
+      },
+      {
+        "id": 3,
+        "imagen": "https://www.latercera.com/resizer/NMMZ-tFXk6FXKcwJrXWl26jUtok=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/SF7J56ER45BJPCUE2KNAKGPK6Q.jpg"
+      },
+      {
+        "id": 4,
+        "imagen": "https://1000marcas.net/wp-content/uploads/2020/02/MMs-logo-2.png"
+      }
+    ]
+  }
+]
