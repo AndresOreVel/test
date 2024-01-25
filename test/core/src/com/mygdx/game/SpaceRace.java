@@ -11,7 +11,7 @@ public class SpaceRace extends Game {
 
         // A l'iniciar el joc carreguem els recursos
         AssetManager.load();
-// I definim la pantalla principal com a la pantalla
+        // I definim la pantalla principal com a la pantalla
         setScreen(new GameScreen2());
     }
 
@@ -36,12 +36,13 @@ public class SpaceRace extends Game {
     @Override
     public void render() {
         super.render();
-//Gdx.app.log("LifeCycle", "render()");
+        Gdx.app.log("LifeCycle", "render()");
     }
 
     @Override
     public void dispose() {
         super.dispose();
-        Gdx.app.log("LifeCycle", "dispose()");
+        AssetManager.dispose();
+        //Gdx.app.log("LifeCycle", "dispose()");
     }
 }

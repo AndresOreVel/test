@@ -65,8 +65,7 @@ public class GameScreen2 implements Screen {
         //Los añado al escenario
         stage.addActor(scrollHandler);
         stage.addActor(spacecraft);
-        //Inicio la música
-        AssetManager.music.play();
+
     }
 
     private void drawElements(){
@@ -129,6 +128,8 @@ public class GameScreen2 implements Screen {
         stage.act(delta);
         //Llamo al método para pintar los asteroides
         //drawElements();
+        //Inicio la música
+        AssetManager.music.play();
     }
 
     @Override

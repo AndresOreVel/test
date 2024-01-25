@@ -54,10 +54,10 @@ public class AssetManager {
         explosion = new TextureRegion[16];
         //Cargamos los 16 estados de la explosión
         int index = 0;
-        for(int i = 0; i < 2; i++){
-            for(int j = 0; j < 8; j++){
-                explosion[index++] = new TextureRegion(sheet, j * 64, i * 64 + 49, 64,64);
-                explosion[index-1].flip(false,true);
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 8; j++) {
+                explosion[index++] = new TextureRegion(sheet, j * 64, i * 64 + 49, 64, 64);
+                explosion[index - 1].flip(false, true);
             }
         }
 
