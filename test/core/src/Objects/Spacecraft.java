@@ -1,8 +1,10 @@
 package Objects;
 
+import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
+import AssetManager.AssetManager;
 import Utils.Settings;
 
 public class Spacecraft extends Actor {
@@ -85,5 +87,9 @@ public class Spacecraft extends Actor {
         direction = SPACECRAFT_STRAIGHT;
     }
 
-
+    @Override
+    public void draw(Batch batch, float parentAlpha) {
+        super.draw(batch, parentAlpha);
+        batch.draw(AssetManager.spacecraft, position.x, position.y, width, height);
+    }
 }

@@ -1,4 +1,5 @@
 package com.mygdx.game;
+import AssetManager.AssetManager;
 import Objects.Asteroid;
 import Objects.ScrollHandler;
 import Objects.Spacecraft;
@@ -64,19 +65,21 @@ public class GameScreen2 implements Screen {
         //Los añado al escenario
         stage.addActor(scrollHandler);
         stage.addActor(spacecraft);
+        //Inicio la música
+        AssetManager.music.play();
     }
 
     private void drawElements(){
         /* 1 */
         // Pintem el fons de negre per evitar el "flickering"
-        Gdx.gl20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-        Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        //Gdx.gl20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        //Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         /* 2 */
         // Recollim les propietats del Batch de l'Stage
         shapeRenderer.setProjectionMatrix(batch.getProjectionMatrix());
         // Inicialitzem el shaperenderer
-        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Line);
 
         /* 3 */
         // Definim el color (verd)
@@ -125,7 +128,7 @@ public class GameScreen2 implements Screen {
         stage.draw();
         stage.act(delta);
         //Llamo al método para pintar los asteroides
-        drawElements();
+        //drawElements();
     }
 
     @Override
